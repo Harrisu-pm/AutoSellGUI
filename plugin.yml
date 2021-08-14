@@ -1,0 +1,22 @@
+#Name: AutoSellGUI
+#Plugin make by: QuocThien908
+#Plugin Created: 7/8/2021
+
+#VUI LÒNG TÔN TRỌNG CHỦ PLUGIN. KHÔNG ĐƯỢC ĐỔI TÊN AUTHOR!!!
+
+#=========PLUGIN INFOMATION===========#
+name: AutoSellGUI
+main: QuocThien908\AutoSellGUI\Main
+api: [3.0.0, 4.0.0]
+version: 1.0
+author: QuocThien908
+depend: ["Sell", "InvCrashFix"]
+commands:
+  autosell:
+    description: "AutoSell Mode"
+    permission: autosell.command.bypass
+permissions:
+  autosell.command.bypass:
+    description: "Permission Command"
+    default: op
+ #=========PLUGIN INFOMATION===========#
