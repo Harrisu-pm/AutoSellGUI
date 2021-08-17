@@ -65,34 +65,15 @@ class Main extends PluginBase implements Listener {
         $this->menu->setListener([$this, "AutoSellCMD"]);
         $this->menu->setName("§f§l• §eAuto§aSell§f •");
         $inventory = $this->menu->getInventory();
-        
-        $inventory->setItem(0, Item::get(160, 15, 1) );
-        $inventory->setItem(1, Item::get(160, 15, 1) );
-        $inventory->setItem(2, Item::get(160, 15, 1) );
-        $inventory->setItem(3, Item::get(160, 15, 1) );
-        $inventory->setItem(4, Item::get(160, 15, 1) );
-        $inventory->setItem(5, Item::get(160, 15, 1) );
-        $inventory->setItem(6, Item::get(160, 15, 1) );
-        $inventory->setItem(7, Item::get(160, 15, 1) );
-        $inventory->setItem(8, Item::get(160, 15, 1) );
-        $inventory->setItem(9, Item::get(160, 15, 1) );
-        $inventory->setItem(10, Item::get(0, 8, 1) );
+       
+        $inventory->setContents(array_fill(0, 27, Item::get(160, 15, 1)));
         $inventory->setItem(11, Item::get(341, 0, 1)->setCustomName("§l§6AutoSell §aOn")); //AutoSell On
+        $inventory->setItem(15, Item::get(331, 0, 1)->setCustomName("§l§6AutoSell §cOff")); //AutoSell Off
+        $inventory->setItem(10, Item::get(0, 8, 1) );
         $inventory->setItem(12, Item::get(0, 9, 1) );
         $inventory->setItem(13, Item::get(0, 9, 1) );
         $inventory->setItem(14, Item::get(0, 9, 1) );
-        $inventory->setItem(15, Item::get(331, 0, 1)->setCustomName("§l§6AutoSell §cOff")); //AutoSell Off
         $inventory->setItem(16, Item::get(0, 8, 1) );
-        $inventory->setItem(17, Item::get(160, 15, 1) );
-        $inventory->setItem(18, Item::get(160, 15, 1) );
-        $inventory->setItem(19, Item::get(160, 15, 1) );
-        $inventory->setItem(20, Item::get(160, 15, 1) );
-        $inventory->setItem(21, Item::get(160, 15, 1) );
-        $inventory->setItem(22, Item::get(160, 15, 1) );
-        $inventory->setItem(23, Item::get(160, 15, 1) );
-        $inventory->setItem(24, Item::get(160, 15, 1) );
-        $inventory->setItem(25, Item::get(160, 15, 1) );
-        $inventory->setItem(26, Item::get(160, 15, 1) );
         $this->menu->send($sender);
     }
 #=========AUTOSELL COMMAND===========#
